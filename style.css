@@ -16,7 +16,7 @@
     --button:#434343;
 }
 body{
-    background: var(--dark-back-ground);
+    background: var(--light-back-ground);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -38,16 +38,17 @@ body{
     font-size:15px;
     color:var(--text-color);
     cursor: pointer;
-    padding: 10px;
+    padding: 13px;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .item{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 15px 0;
     width: 80vw;
     padding: 10px;
     border-radius: 5px;
@@ -55,10 +56,14 @@ body{
     /* margin-bottom: 20px; */
     background: var(--dark-back-ground);
 }
-item:last-of-type{
+
+.item input[type="checkbox"]{
+    margin-right: 5px;
+
+}
+.item:last-of-type{
     margin-bottom: 0;
 }
-
 .item input[type="text"]{
     appearance: none;
 	background: none;

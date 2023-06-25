@@ -17,7 +17,7 @@ function createNewTask(){
     list.prepend(item_ele);
     input_ele.removeAttribute("disabled");
     input_ele.focus();
-    save();
+    Save();
 }
 
 function createTodoElement(item){
@@ -66,19 +66,19 @@ function createTodoElement(item){
     else{
         item_ele.classList.remove("complete");
     }
-    save();
+    Save();
    }) 
 
    input_ele.addEventListener("input",()=>{
     item.text=input_ele.value;
    })
     
-   input_ele.addEventListener("blur", () => {
+    input_ele.addEventListener("blur", () => {
     input_ele.setAttribute("disabled", "");
     Save();
 });
 
-edit_bttn_ele.addEventListener("click", () => {
+    edit_bttn_ele.addEventListener("click", () => {
     input_ele.removeAttribute("disabled");
     input_ele.focus();
 });
@@ -108,11 +108,11 @@ DisplayTodos();
 function Save() {
 	const save = JSON.stringify(todo);
 	
-	localStorage.setItem("my_todos", save);
+	localStorage.setItem("my_todo", save);
 }
 
 function Load() {
-	const data = localStorage.getItem("my_todos");
+	const data = localStorage.getItem("my_todo");
 
 	if (data) {
 		todo = JSON.parse(data);
