@@ -9,11 +9,11 @@
 }
 :root{
     --text-color:whitesmoke;
-    --dark-back-ground:#32b7a7;
+    --dark-back-ground:#434343;
     /* linear-gradient(to bottom,#13547a,#80d0c7); */
-    --light-back-ground:#2590a5;
+    --light-back-ground:#524f4f;
     /* linear-gradient(to left,#74ccc8,#33a8a2); */
-    --button:#434343;
+    --button:#181515;
 }
 body{
     background: var(--light-back-ground);
