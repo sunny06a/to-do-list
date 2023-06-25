@@ -1,0 +1,111 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Nunito+Sans:wght@300&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+:root{
+    --text-color:rgb(235, 224, 224);
+    --dark-back-ground:  rgb(69, 76, 92);
+    --light-back-ground: rgb(69, 76, 92);
+    --button:rgb(82, 68, 126);
+}
+body{
+    background-color: var(--dark-back-ground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    color:var(--text-color);
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.todo-list{
+    width: 500px;
+    padding: 20px;
+    box-shadow:  0 10px 40px black;
+    border-radius: 10px;
+    background-color: var(--light-back-ground);
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 15px;
+}
+.enter-task{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 15px;
+}
+.add-bttn{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button);
+    outline: none;
+    font-size:15px;
+    color:var(--text-color);
+    /* cursor: pointer; */
+    opacity: 0.5;
+}
+
+.add-bttn.acitve{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button);
+    outline: none;
+    font-size:15px;
+    color:var(--text-color);
+    cursor: pointer;
+    opacity: 1;
+}
+.task{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px black;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-back-ground);
+}
+.item p{
+    font-size: 16px;
+    font-weight: 500;
+    color:var(--text-color);
+    letter-spacing: 1px;
+
+}
+.item.completed p{
+    text-decoration: line-through;
+    /* background-color: wheat; */
+    color: var(--text-color);
+
+}
+.item-bttn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item-bttn button{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button);
+    outline: none;
+    font-size:15px;
+    color:var(--text-color);
+    cursor: pointer;
+}
