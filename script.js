@@ -35,6 +35,7 @@ function createTodoElement(item){
 
     const input_ele = document.createElement("input");
 	input_ele.type = "text";
+    // input_ele.classList.add("task-text");
 	input_ele.value = item.text;
 	input_ele.setAttribute("disabled", "");
 
